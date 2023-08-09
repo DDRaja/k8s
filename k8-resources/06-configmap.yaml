@@ -16,8 +16,8 @@ spec:
       - name: Duration
         valueFrom: 
         configMapKeyRef:
-        name: course-config
-        key: duration
+        - name: course-config
+          key: duration
 
 
 # $kubectl apply -f 07-pod-configmap.yaml
