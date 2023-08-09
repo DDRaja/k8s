@@ -19,11 +19,7 @@ spec:
             name: course-configmap
             key: duration
 
-metadata:
-  name: course-configmap
-data:
-  course: k8s
-  duration: 25hrs
+
 
 
 # $kubectl apply -f 07-pod-configmap.yaml
