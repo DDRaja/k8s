@@ -11,4 +11,6 @@ spec:
   - image: almalinux
     name: almalinux
     command: ["sleep","200"]
+    env:
+      label:almalinux
 
