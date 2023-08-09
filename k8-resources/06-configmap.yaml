@@ -10,14 +10,14 @@ spec:
       env:
       - name: Course
         valueFrom: 
-        configMapKeyRef:
-        - name: course-config
-          key: course
+          configMapKeyRef:
+          - name: course-config
+            key: course
       - name: Duration
         valueFrom: 
-        configMapKeyRef:
-        - name: course-config
-          key: duration
+          configMapKeyRef:
+          - name: course-config
+            key: duration
 
 
 # $kubectl apply -f 07-pod-configmap.yaml
