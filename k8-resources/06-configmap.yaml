@@ -8,16 +8,16 @@ spec:
     - name: nginx
       image: nginx
       env:
-        - name: Course
-          valueFrom: null
-          configMapKeyRef:
-            name: course-config
-            key: course
-        - name: Duration
-          valueFrom: null
-          configMapKeyRef:
-            name: course-config
-            key: duration
+      - name: Course
+        valueFrom: 
+        configMapKeyRef:
+        - name: course-config
+          key: course
+      - name: Duration
+        valueFrom: 
+        configMapKeyRef:
+        name: course-config
+        key: duration
 
 
 # $kubectl apply -f 07-pod-configmap.yaml
