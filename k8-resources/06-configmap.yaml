@@ -11,12 +11,12 @@ spec:
       - name: Course
         valueFrom: 
           configMapKeyRef:
-          - name: course-config
+          - name: course-configmap
             key: course
       - name: Duration
         valueFrom: 
           configMapKeyRef:
-          - name: course-config
+          - name: course-configmap
             key: duration
 
 
