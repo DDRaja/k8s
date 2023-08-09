@@ -4,7 +4,7 @@ metadata:
   name: imagepull-pod
 spec:
   containers: 
-  - image: niginx
+  - image: nginx
     name: nginx
     imagePullPolicy: Always
     ports:

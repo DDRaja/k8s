@@ -5,6 +5,6 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: nginx:rrrr
+    image: niginx:rrrr
 
     ## as image version is incorrect , error will be received.
