@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: env-pod
+spec:
+  containers:
+  - name:nginx
+    image: nginx
+    env:
+    - name: k8s
+      value: kubernetes
+    - name: containers
+      value: docker
+
+# $kubectl apply -f  06-env.yaml
+# $kubectl get pods
+# $kubectl exec -it env -- bash

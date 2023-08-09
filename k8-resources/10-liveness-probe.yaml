@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:   
+  name: liveness-probe
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+    livenessProbe:
+      httget:
+        path: /
+        port: 80
+      initialdelaySeconds: 3
+      periodSeconds: 3
+
+#kubectl apply -f 10-liveness-probe.yaml
+#kubectl get pods
+# using liveness probe , self healing can be done when ever a pod goes down for any reason

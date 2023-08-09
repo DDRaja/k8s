@@ -1,0 +1,19 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: eks-spot-cluster
+  region: ap-south-1
+managednodeGroups:
+  # instance_type:  defaults to [m5.large]
+- name: spot-1
+  spot: true
+  ssh:
+    publickeyName: docker_install
+
+
+# To create eks cluster
+# eksctl create cluster -f  --config-name=[file-name].yaml
+
+
+# to delete cluster
+# kubectl delete cluster -f --config-name=[file-name].yaml

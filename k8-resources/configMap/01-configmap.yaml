@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: course-configmap
+data:
+  course: k8s
+  duration: 25hrs
+
+
+# $kubectl apply -f 01-configmap.yaml
+# $kubectl get configmaps
+# $kubectl describe configmap course-config
