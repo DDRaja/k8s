@@ -6,7 +6,7 @@ metadata:
     course: k8s
     duration: 25hrs
   annotations:
-    org.docker.kubernetes.image:dd
+  - org.docker.kubernetes.image:dd
 spec:
   containers:
   - image: nginx
