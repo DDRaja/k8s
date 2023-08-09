@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: errimageexample-pod
 spec:
-  comtainers:
+  containers:
   - name: nginx
     image: nginx:rrrr
 
