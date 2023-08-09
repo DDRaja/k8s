@@ -1,22 +1,24 @@
+---
 apiVersion: v1
 kind: Pod
 metadata:
   name: configmap-pod
 spec:
   containers:
-  - name: nginx
-    image: nginx
-    env:
-    -name:Course
-     valueFrom:
-      configMapkeyRef:
-        name: course-config
-        key: course
-     -name:Duration
-     valueFrom:
-      configMapkeyRef:
-        name: course-config
-        key: duration
+    - name: nginx
+      image: nginx
+      env:
+        - name: Course
+          valueFrom: null
+          configMapkeyRef:
+            name: course-config
+            key: course
+        - name: Duration
+          valueFrom: null
+          configMapkeyRef:
+            name: course-config
+            key: duration
+
 
 # $kubectl apply -f 07-pod-configmap.yaml
 # $kubectl get pods
