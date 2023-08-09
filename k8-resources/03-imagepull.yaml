@@ -7,5 +7,5 @@ spec:
   - image: niginx
     name: nginx
     imagePullPolicy: Always
-    Ports:
+    ports:
     - containerPort: 80
