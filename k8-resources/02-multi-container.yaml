@@ -7,7 +7,7 @@ spec:
   containers:
   - image: nginx
     name: nginx
-    Ports:
+    ports:
       containerPort: 80
   - image: almalinux
     name: almalinux
