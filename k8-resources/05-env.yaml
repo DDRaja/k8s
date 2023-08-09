@@ -4,7 +4,7 @@ metadata:
   name: env-pod
 spec:
   containers:
-  - name:nginx
+  - name: nginx
     image: nginx
     env:
     - name: k8s
