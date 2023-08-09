@@ -12,5 +12,5 @@ spec:
     name: almalinux
     command: ["sleep","200"]
     env:
-      label:almalinux
+    - label:almalinux
 
