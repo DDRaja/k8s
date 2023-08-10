@@ -4,11 +4,12 @@ metadata:
   name: eks-spot-cluster
   region: ap-south-1
 managednodeGroups:
-  # instance_type:  defaults to [m5.large]
+
+# 'instance_type:'  defaults to ['m5.large']
 - name: spot-1
   spot: true
   ssh:
-    publickeyName: docker_install
+    publicKeyName: docker_install
 
 
 # To create eks cluster

@@ -6,7 +6,7 @@ spec:
   containers:
   - name: stress
     image: stress
-    command["sleep","200"]
+    command: ["sleep","200"]
 
 #Run below stress command to exhaust cpu in the server if no limit resources defined.
 
