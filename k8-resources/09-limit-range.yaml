@@ -7,7 +7,7 @@ spec:
   limits:  # # default limits
   - default: 
       cpu: "500m" 
-    defaultRequet:   # default request
+    defaultRequest:   # default request
       cpu: "500m"
     # max & min cpu limit range
     max:  
