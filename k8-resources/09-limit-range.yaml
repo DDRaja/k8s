@@ -11,17 +11,16 @@ spec:
       cpu: "500m"
     # max & min cpu limit range
     max:  
-      cpu: 1
+      cpu: "1"
     min:
       cpu: 100m
     type: container
 
 ---
-
 apiVersion: v1
 kind: Pod
 metadata:
-  name:limit-res-pod
+  name: limit-res-pod
 spec:
   containers:
   - name: nginx
