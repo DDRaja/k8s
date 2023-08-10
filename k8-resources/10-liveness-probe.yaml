@@ -10,7 +10,7 @@ spec:
       httget:
         path: /
         port: 80
-      initialdelaySeconds: 3
+      initialDelaySeconds: 3
       periodSeconds: 3
 
 #kubectl apply -f 10-liveness-probe.yaml
