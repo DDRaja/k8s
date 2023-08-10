@@ -7,7 +7,7 @@ spec:
   - image: nginx
     name: nginx
     livenessProbe:
-      httget:
+      httGet:
         path: /
         port: 80
       initialDelaySeconds: 3
